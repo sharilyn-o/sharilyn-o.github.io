@@ -1,4 +1,4 @@
-<style>
+
 /* side style */
 .sidebar {
   margin: 0;
@@ -29,8 +29,8 @@
   background-color: #555;
   color: white;
 }
+/* content */
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
@@ -61,4 +61,4 @@ img {
   height: 300px;
   object-fit: cover;
 }
-</style>
+
