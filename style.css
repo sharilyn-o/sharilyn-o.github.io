@@ -1,22 +1,21 @@
-
-/* tablet */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-/* mobile */
-@media screen and (max-width: 500px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
+/* mobile/tablet */\
+@media screen and (max-width: 700px) \{\
+  .sidebar \{\
+    width: 100%;\
+    height: auto;\
+    position: relative;\
+  \}\
+  .sidebar a \{float: left;\}\
+  div.content \{margin-left: 0;\}\
+\}\
+\
+/* phone */\
+@media screen and (max-width: 500px) \{\
+  .sidebar a \{\
+    text-align: center;\
+    float: none;\
+  \}\
+\}\
 
 img {
   width: 200px;
