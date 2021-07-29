@@ -1,72 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* side style */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
+<link rel="stylesheet" href="/sharilyn-o/demo/blob/master/styles.css">
 
-/* links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
 
-/* Active */
-.sidebar a.active {
-  background-color: #266603;
-  color: white;
-}
 
-/* hover */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/* Page content */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/* mobile/tablet */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-/* phone */
-@media screen and (max-width: 500px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-</style>
-</head>
 <body>
 
 <div class="sidebar">
