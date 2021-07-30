@@ -47,7 +47,7 @@ img {
 }
 
 /* large screen */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 2500px) {
 
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
