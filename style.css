@@ -54,16 +54,6 @@ img {
         
 }
 
-/* tablet */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-
 /* mobile */
 @media screen and (max-width: 600px) {
   .sidebar a {
