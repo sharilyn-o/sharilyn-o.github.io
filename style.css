@@ -37,7 +37,7 @@ img {
   height: 300px;
   object-fit: cover;
 }
-
+/* tablet  */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
