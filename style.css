@@ -1,0 +1,66 @@
+<style>
+
+/* side style */
+.sidebar {
+  background-color: #f1f1f1;
+}
+
+/* links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active */
+.sidebar a.active {
+  background-color: #266603;
+  color: white;
+}
+
+/* hover */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content */
+div.content {
+  padding: 16px 16px;
+  height: 1000px;    
+
+}
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+/* large screen */
+@media screen and (max-width: 1700px) {
+
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+        
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+    
+    
+
+  
+</style>

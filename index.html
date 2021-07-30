@@ -1,102 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+    <title>Nordic Reptiles</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* side style */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
 
-/* links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* Active */
-.sidebar a.active {
-  background-color: #266603;
-  color: white;
-}
-
-/* hover */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/* Page content */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/* mobile/tablet */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-/* phone */
-@media screen and (max-width: 500px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-</style>
-</head>
 <body>
+<!-- Nav Bar -->
 
 <div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-
+  <a class="active" href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
 </div>
+    <br>
+<!-- Page Content -->
 
-<div class="content">
-<h1><center>Nordic Reptiles</h1></center>
 
-<center><img src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/130721573_1323844354621901_2390270657064916792_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=bmuJjdsrirEAX_zFzb_&_nc_ht=scontent.fric1-1.fna&oh=28d2d42c915018463f97f5c9bb2ce842&oe=60D4C46B" alt="Logo" </img></center>
-
-<h2>Heading in h2, som more sample text</h2>
-
-<p>Phasellus sem odio, varius quis, cursus at, ullamcorper eget, turpis. Maecenas a mi. Mauris dignissim lectus malesuada odio. Duis elit arcu, lobortis ut, porta ac, venenatis ornare, odio. Pellentesque scelerisque. Ut elementum laoreet massa. Suspendisse hendrerit odio eget turpis. Cras tellus dui, malesuada id, adipiscing ut, laoreet sed, magna. Phasellus scelerisque aliquet ligula. Quisque vitae elit sit amet enim suscipit interdum. Curabitur laoreet, mauris sit amet aliquet interdum, pede sapien malesuada metus, in tincidunt turpis justo id arcu. Donec gravida odio ac lectus. Nam rutrum ante in nisi laoreet aliquet. Sed at ante.</p>
-
-<h3>Heading in h3, som more sample text</h3>
-
-<p>Nulla facilisi. Nullam cursus scelerisque erat. Praesent convallis rhoncus dui. In hac habitasse platea dictumst. Nullam pellentesque. Mauris ac orci. Donec dictum. Etiam purus tortor, elementum a, posuere nec, pulvinar id, ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque vel justo. Nullam posuere purus sed arcu.</p>
-
-<ul>
-	<li>Nulla facilisi.</li>
-	<li>Pellentesque habitant morbi</li>
-	<li>Quisque vel justo.</li>
-	<li>Nullam posuere purus sed arcu.</li>
-</ul>
-
+<div class="snekz">
+  <div class="snek">
+  🐍
+  </div>
+  <div class="snek">
+  🐍
+  </div>
+  <div class="snek">
+  🐍
+  </div>
+  <div class="snek">
+  🐍
+  </div>
+  <div class="snek">
+  🐍
+  </div>
+  <div class="snek">
+    🐍
+  </div>
+  <div class="snek">
+    🐍
+  </div>
+  <div class="snek">
+    🐍
+  </div>
+  <div class="snek">
+    🐍
+  </div>
+  <div class="snek">
+    🐍
+  </div>
+  <div class="snek">
+    🐍
+  </div>
 </div>
+<style>
+.snek {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+@-webkit-keyframes snekz-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snekz-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snekz-fall{0%{top:-10%}100%{top:100%}}@keyframes snekz-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snek{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snekz-fall,snekz-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snekz-fall,snekz-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snek:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snek:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snek:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snek:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snek:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snek:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snek:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snek:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snek:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snek:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snek:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snek:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
 </style>
+
+
+    <div class="content">
+            
+       <center>
+           <h1 style="
+ body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}">Nordic Reptiles</h1>
+    
+           <img src="https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/130721573_1323844354621901_2390270657064916792_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=19tdtheR010AX9UPtI0&_nc_ht=scontent.fric1-1.fna&oh=3f0b0aba078a918fd8dc1172626fe9ac&oe=6129CD2B" alt="Logo"></center>
+        
+<h2>According to all known laws of aviation, </h2>
+
+<p>there is no way a bee should be able to fly.
+Its wings are too small to get its fat little body off the ground.
+The bee, of course, flies anyway because bees don't care what humans think is impossible.
+Yellow, black. Yellow, black. Yellow, black. Yellow, black.
+Ooh, black and yellow!
+Let's shake it up a little.
+Barry! Breakfast is ready!
+Coming!
+Hang on a second.
+Hello?
+Barry?
+Adam?
+Can you believe this is happening?
+I can't.
+I'll pick you up.
+Looking sharp.
+Use the stairs, Your father paid good money for those.
+Sorry. I'm excited.</p>
+
+<h3>Here's the graduate.</h3>
+
+<p>We're very proud of you, son.
+A perfect report card, all B's.
+Very proud.
+Ma! I got a thing going here.
+You got lint on your fuzz.
+Ow! That's me!
+Wave to us! We'll be in row 118,000.
+Bye!
+Barry, I told you, stop flying in the house!
+Hey, Adam.
+Hey, Barry.
+Is that fuzz gel?
+A little. Special day, graduation.
+Never thought I'd make it.
+Three days grade school, three days high school.
+Those were awkward.
+Three days college. I'm glad I took a day and hitchhiked around The Hive.
+You did come back different.
+Hi, Barry. Artie, growing a mustache? Looks good.
+Hear about Frankie?
+Yeah.
+You going to the funeral?
+No, I'm not going.
+Everybody knows, sting someone, you die.
+Don't waste it on a squirrel.
+Such a hothead.
+I guess he could have just gotten out of the way.
+I love this incorporating an amusement park into our day.
+That's why we don't need vacations.
+Boy, quite a bit of pomp under the circumstances.
+Well, Adam, today we are men.
+We are!
+Bee-men.
+Amen!
+Hallelujah!
+Students, faculty, distinguished bees,
+please welcome Dean Buzzwell.
+Welcome, New Hive City graduating class of 9:15.
+That concludes our ceremonies And begins your career at Honex Industries!
+Will we pick our job today?
+I heard it's just orientation.
+Heads up! Here we go.
+Keep your hands and antennas inside the tram at all times.
+Wonder what it'll be like?
+A little scary.
+Welcome to Honex, a division of Honesco and a part of the Hexagon Group.
+This is it!
+Wow.
+Wow.
+We know that you, as a bee, have worked your whole life to get to the point where you can work for your whole life.
+Honey begins when our valiant Pollen Jocks bring the nectar to The Hive.
+Our top-secret formula is automatically color-corrected, scent-adjusted and bubble-contoured into this soothing sweet syrup with its distinctive golden glow you know as... Honey!
+That girl was hot.
+She's my cousin!
+She is?
+Yes, we're all cousins.
+Right. You're right.</p>
+
+
+</div>
+    </body>
 </html>
+
+	
