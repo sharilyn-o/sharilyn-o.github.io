@@ -1,38 +1,8 @@
-/* tablet */
-@media screen and (max-width: 700px) \{
-  .sidebar \{
-    width: 100%;
-    height: auto;
-    position: relative;
-  \}
-  .sidebar a \{float: center;\}
-  div.content \{margin-left: 0;\}
-\}
-
-/* phone */
-@media screen and (max-width: 600px) \{
-  .sidebar a \{
-    text-align: center;
-    float: center;
-  \}
-\}
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-
+<style>
 
 /* side style */
 .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
 }
 
 /* links */
@@ -54,10 +24,43 @@ img {
   background-color: #555;
   color: white;
 }
-/* content */
 
+/* Page content */
 div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
+  padding: 16px 16px;
+  height: 1000px;    
+
 }
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+/* large screen */
+@media screen and (max-width: 1700px) {
+
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+        
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+    
+    
+
+  
+</style>
